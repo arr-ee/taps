@@ -17,6 +17,8 @@ Gem::Specification.new do |gem|
   gem.add_dependency "rest-client",   ">= 1.4.0", "< 1.7.0"
   gem.add_dependency "sequel"
   gem.add_dependency "sinatra"
+  gem.add_dependency "oj"
+  gem.add_dependency "multi_json"
 
   gem.add_development_dependency "sqlite3", "~> 1.2"
   gem.add_development_dependency "bacon"

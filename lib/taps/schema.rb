@@ -1,7 +1,8 @@
 require 'sequel'
 require 'sequel/extensions/schema_dumper'
 require 'sequel/extensions/migration'
-require 'vendor/okjson'
+require 'oj'
+require 'multi_json'
 
 module Taps
 module Schema
@@ -54,7 +55,7 @@ end
 END_MIG
       end
     end
-    OkJson.encode(idxs)
+    MultiJson.encode(idxs)
   end
 
   def load(database_url, schema)
